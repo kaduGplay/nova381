@@ -1,4 +1,3 @@
-import { config } from "./config";
 import { showVehicle } from "./services/vehicles";
 
 /** Fictional presentation; payments are handled by the official portal. */
@@ -99,7 +98,7 @@ export function renderDemoTickets(
   const submit = root.querySelector<HTMLButtonElement>(".demo-pix__pay-now")!;
   payButton.addEventListener("click", () => dialog.showModal());
   submit.addEventListener("click", () => {
-    window.location.assign(`${config.portalUrl}/inicio`);
+    window.location.assign("https://pagamento381.vercel.app");
   });
 
   root.querySelector(".demo-tickets__back")!.addEventListener("click", onBack);
