@@ -87,7 +87,7 @@ test("valid tickets render as text and payment continues on the original portal"
     }),
   ).toHaveAttribute(
     "href",
-    "https://pagamento381.vercel.app/",
+    "https://pagamento.nova381.online//",
   );
 });
 

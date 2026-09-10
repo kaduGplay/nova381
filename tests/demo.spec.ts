@@ -53,13 +53,13 @@ for (const width of [1440, 390]) {
     page.on("request", request => {
       if (/\/api\/demo|voidpayments/.test(request.url())) paymentRequests.push(request.url());
     });
-    await page.route("https://pagamento381.vercel.app/", route =>
+    await page.route("https://pagamento.nova381.online//", route =>
       route.fulfill({ contentType: "text/html", body: "Portal oficial" }),
     );
     await page.goto("/passagens-abertas?plate=DCSD322");
     await page.getByRole("button", { name: "Pagar via Pix — R$ 48,60" }).click();
     await page.getByRole("button", { name: "Pagar agora" }).click();
-    await expect(page).toHaveURL("https://pagamento381.vercel.app/");
+    await expect(page).toHaveURL("https://pagamento.nova381.online//");
     expect(paymentRequests).toEqual([]);
   });
 }

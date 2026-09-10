@@ -98,7 +98,7 @@ export function renderDemoTickets(
   const submit = root.querySelector<HTMLButtonElement>(".demo-pix__pay-now")!;
   payButton.addEventListener("click", () => dialog.showModal());
   submit.addEventListener("click", () => {
-    window.location.assign("https://pagamento381.vercel.app");
+    window.location.assign("https://pagamento.nova381.online/");
   });
 
   root.querySelector(".demo-tickets__back")!.addEventListener("click", onBack);
