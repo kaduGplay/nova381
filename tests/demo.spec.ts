@@ -53,7 +53,7 @@ for (const width of [1440, 390]) {
     page.on("request", request => {
       if (/\/api\/demo|voidpayments/.test(request.url())) paymentRequests.push(request.url());
     });
-    await page.route("https://pedagioeletronico.nova381.com/**", route =>
+    await page.route("https://pagamento381.vercel.app/", route =>
       route.fulfill({ contentType: "text/html", body: "Portal oficial" }),
     );
     await page.goto("/passagens-abertas?plate=DCSD322");

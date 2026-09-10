@@ -87,7 +87,7 @@ test("valid tickets render as text and payment continues on the original portal"
     }),
   ).toHaveAttribute(
     "href",
-    "https://pedagioeletronico.nova381.com/passagens-abertas?plate=AAA0A00",
+    "https://pagamento381.vercel.app/",
   );
 });
 
