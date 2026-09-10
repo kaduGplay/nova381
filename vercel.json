@@ -1,0 +1,28 @@
+{
+  "rewrites": [
+    {
+      "source": "/inicio",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/duvidas-frequentes",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/formulario-isencao",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/passagens-abertas",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/ativacao-de-conta",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/pagamento-com-cartao",
+      "destination": "/index.html"
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+(function($){'use strict';function initDesktopDropdown(){$('.desktop-menu-item').on('mouseenter',function(){const $submenu=$(this).find('.desktop-submenu');if($submenu.length>0){$submenu.addClass('show');}});$('.desktop-menu-item').on('mouseleave',function(){const $submenu=$(this).find('.desktop-submenu');if($submenu.length>0){$submenu.removeClass('show');}});}
+$(document).ready(function(){initDesktopDropdown();});})(jQuery);

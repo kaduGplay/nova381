@@ -1,0 +1,126 @@
+@font-face {
+  font-family: 'Barlow';
+  font-style: italic;
+  font-weight: 100;
+  font-display: swap;
+  src: url("/saiba-mais/assets/7096524912d323ae.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'Barlow';
+  font-style: italic;
+  font-weight: 200;
+  font-display: swap;
+  src: url("/saiba-mais/assets/bc5bbd41ad850b77.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'Barlow';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/saiba-mais/assets/ad962f0e131f1219.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'Barlow';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/saiba-mais/assets/820c48809091d9e1.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'Barlow';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/saiba-mais/assets/d57d07ee6440e403.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'Barlow';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/saiba-mais/assets/9f6d351bb5cb9c12.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'Barlow';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/saiba-mais/assets/801f4a120a7c0051.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'Barlow';
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/saiba-mais/assets/897120d25d58bf1f.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'Barlow';
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+  src: url("/saiba-mais/assets/99fc04c11bb90540.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url("/saiba-mais/assets/2fe1cf7bf5d776f7.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url("/saiba-mais/assets/5c1664b03b22d26f.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/saiba-mais/assets/2d253d16b6b51999.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/saiba-mais/assets/a8dc97f148375417.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/saiba-mais/assets/28af266cf3d5efdd.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/saiba-mais/assets/ae0ad37b8bd95b79.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/saiba-mais/assets/dfb7d06fb08e223c.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/saiba-mais/assets/4729179f7d64bd84.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("/saiba-mais/assets/82d2dc270d91cef4.ttf") format('truetype');
+}

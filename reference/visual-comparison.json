@@ -1,0 +1,32 @@
+[
+  {
+    "viewport": "desktop",
+    "originalSize": [
+      1440,
+      4219
+    ],
+    "localSize": [
+      1440,
+      4219
+    ],
+    "bins": {},
+    "differentPixels": 0,
+    "pixelsAbove15": 0,
+    "totalPixels": 6075360
+  },
+  {
+    "viewport": "mobile",
+    "originalSize": [
+      390,
+      4969
+    ],
+    "localSize": [
+      390,
+      4969
+    ],
+    "bins": {},
+    "differentPixels": 0,
+    "pixelsAbove15": 0,
+    "totalPixels": 1937910
+  }
+]
