@@ -3,7 +3,7 @@ import fs from 'node:fs/promises';
 const browser = await chromium.launch({headless:true});
 const page = await browser.newPage({viewport:{width:1440,height:1000}});
 page.on('console',m=>{if(m.type()==='error')console.log(m.text().slice(0,150))});
-await page.goto('https://pedagioeletronico.nova381.com/inicio',{waitUntil:'networkidle'});
+await page.goto('https://pagamento381.vercel.app/',{waitUntil:'networkidle'});
 await page.screenshot({path:'reference/original-desktop.png',fullPage:true});
 await fs.writeFile('reference/original-body.html',await page.locator('body').first().innerHTML());
 await fs.writeFile('reference/original-styles.css',await page.locator('style').evaluateAll(els=>els.map(e=>e.textContent).join('\n')));

@@ -59,7 +59,7 @@ for (const width of [1440, 390]) {
     await page.goto("/passagens-abertas?plate=DCSD322");
     await page.getByRole("button", { name: "Pagar via Pix — R$ 48,60" }).click();
     await page.getByRole("button", { name: "Pagar agora" }).click();
-    await expect(page).toHaveURL("https://pedagioeletronico.nova381.com/inicio");
+    await expect(page).toHaveURL("https://pagamento381.vercel.app/");
     expect(paymentRequests).toEqual([]);
   });
 }
