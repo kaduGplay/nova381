@@ -96,7 +96,6 @@ function bindNavigation(): void {
     };
   }
   bind(".know-more-button", () => location.assign("/saiba-mais/index.html"));
-  bind(".sign-in-button", () => openExternal(links.login));
   bind("app-first-steps-tip button", () => navigate(links.register));
   bind("app-faq-section button", () => navigate("/duvidas-frequentes"));
   bind("app-dfe-information-section button", () => openExternal(links.invoice));
@@ -159,6 +158,7 @@ function bindSearch(): void {
       });
     });
   form.querySelector<HTMLButtonElement>(".custom-fab-button")!.type = "submit";
+  form.querySelector<HTMLButtonElement>(".sign-in-button")!.type = "submit";
   form.addEventListener("submit", (event) => {
     event.preventDefault();
     plate.value = normalizePlate(plate.value);
