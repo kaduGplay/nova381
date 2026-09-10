@@ -25,7 +25,8 @@ export function createVehicleApi({ token = process.env.VEHICLE_API_TOKEN, fetchI
     } catch { throw fail(503, 'UNAVAILABLE', 'A consulta do veículo está temporariamente indisponível.'); }
     if (response.status === 404) throw fail(404, 'NOT_FOUND', 'Veículo não encontrado para esta placa.');
     if (response.status === 429) throw fail(429, 'LIMIT', 'Limite gratuito de consultas atingido. Tente novamente mais tarde.');
-    if ([401, 403].includes(response.status)) throw fail(503, 'AUTH', 'O serviço de consulta precisa ter seu acesso configurado.');
+    if (response.status === 401) throw fail(503, 'AUTH', 'O provedor recusou a chave de consulta. É necessário atualizar a credencial do serviço.');
+    if (response.status === 403) throw fail(503, 'FORBIDDEN', 'O provedor não autorizou a consulta de veículos para esta conta.');
     if (!response.ok) throw fail(503, 'UNAVAILABLE', 'Não foi possível consultar o veículo neste momento.');
     let result;
     try { result = await response.json(); } catch { throw fail(502, 'INVALID_RESPONSE', 'O serviço retornou dados inválidos.'); }
