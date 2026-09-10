@@ -58,7 +58,8 @@ export function renderDemoTickets(
         </button>
         <dialog class="demo-pix" aria-labelledby="demo-pix-title" aria-describedby="demo-pix-description">
           <h2 id="demo-pix-title">Confirme seu pagamento</h2>
-          <p id="demo-pix-description">Estas passagens são fictícias. Ao continuar, você será direcionado ao site oficial da Nova 381.</p>
+          <p id="demo-pix-description">Mantenha o pagamento dos seus pedágios em dia. A falta de pagamento pode resultar em multas, pontos na carteira e outras penalidades previstas na legislação de trânsito.
+</p>
           <div class="demo-pix__plate-confirm"><span>Placa</span><strong class="demo-pix__plate"></strong></div>
           <ul class="demo-pix__ticket-list">
             ${passages
