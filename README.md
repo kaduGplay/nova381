@@ -122,3 +122,25 @@ API. O servidor `npm start` já inclui a rota. Para servir também os arquivos d
 (`API_PORT`), para uso atrás de um proxy. Requer Node.js 24+.
 
 Validação: `npm run test:server` e `npx playwright test tests/vehicles.spec.ts`.
+
+### Publicar a consulta na Vercel
+
+A função `api/vehicles/[plate].js` atende `/api/vehicles/:plate` na Vercel,
+reutilizando o mesmo adaptador do desenvolvimento local. Use o preset **Vite**,
+com build `npm run build` e saída `dist`.
+
+Em **Settings → Environment Variables**, adicione `VEHICLE_API_TOKEN` com o token
+Falcon, habilitado para **Production** (e **Preview**, se necessário). A chave
+local em `.env.local` não é enviada pelo Git e não configura a Vercel. Depois de
+salvar a variável, faça **Redeploy**. Um HTTP 503 com `NOT_CONFIGURED` indica que
+ela não está disponível naquele deployment; um 404 indica que a função não foi
+publicada. A rota com `/api/vehicles/INVALID` deve retornar HTTP 400, sem consumir
+uma consulta no provedor.
+
+O cache e o limite local são por instância da função, não globais entre instâncias
+serverless. O provedor continua responsável pela cota total da conta.
+
+O campo da placa solicita teclado de texto com capitalização e aceita números;
+o sistema operacional determina a disposição das teclas. O vídeo institucional
+inicia sem som e dentro da página; se o navegador bloquear autoplay (por exemplo,
+por economia de energia), há um botão para iniciar a reprodução.

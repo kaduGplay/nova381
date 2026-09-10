@@ -65,3 +65,13 @@ test('caps uncached requests at ten per hour', async t => {
   time += 3600001;
   assert.equal((await fetch(`${base}/ABC1D23`)).status, 404);
 });
+
+test('Vercel entry serves the public vehicle route', async t => {
+  const { default: app } = await import('../../api/vehicles/[plate].js');
+  const server = app.listen(0, '127.0.0.1');
+  await new Promise(resolve => server.once('listening', resolve));
+  t.after(() => new Promise(resolve => server.close(resolve)));
+  const response = await fetch(`http://127.0.0.1:${server.address().port}/api/vehicles/INVALID`);
+  assert.equal(response.status, 400);
+  assert.equal((await response.json()).code, 'INVALID_PLATE');
+});
